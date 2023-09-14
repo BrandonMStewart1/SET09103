@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Pizzas</title>
+<link rel="stylesheet" type="text/css" href="../CSS/cookingStyles.css">
+<script>
+function displayLinks (id){
+document.getElementById(id).style.display="block";}
+
+function hideLinks (id){
+document.getElementById(id).style.display="none";}
+
+function enlargeImage1(myimage)
+{myimage.src="../images/pizza1.png"}
+
+function enlargeImage2(myimage)
+{myimage.src="../images/thai2.png"}
+
+var sitesArray = ["B&C.html", "Breakfast.html", "Pepperoni.html","BBQ.html", "Hawaiian.html", "Korma.html", "Vindaloo.html", "Tikka.html", "Carbonara.html", "Lasagna.html", "Bolognese.html", ];
+var randomised = sitesArray[Math.floor(Math.random() * sitesArray.length)];
+function linkRandom(){
+window.location.replace(randomised);
+}
+
+</script>
+</head>
+
+<body>
+
+<!-- Page Header -->
+<header>
+<h1>Student Cook Hub</h1>
+
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="Pizzas.html">Pizzas</a></li>
+<li><a href="Pastas.html">Pastas</a></li>
+<li><a href="Burritos.html">Burritos</a></li>
+<li><a href="Curries.html">Curries</a></li>
+<button type="button" onclick="linkRandom(this)" style= "width:200px; height:45px; background-color:#A7CCED">Click Me!</button> 
+</ul>
+</nav>
+
+<!-- The main content of the page -->
+<main style="height:1250px;">
+<section>
+    <h2>Pizzas</h2>
+	<p style="margin:10px;">This is where you will find all the info you will need on how to create the perfect pizzas</p>
+</section>
+<h3>Pepperoni pizza recipe</h3>
+         <p id="pizza1Text" onclick="displayLinks ('pizza1');">The pepperoni pizza is a classic and is a pizza pretty much everyone likes and as such it stands to reason most people would like to know  how to make one
+and if that person is you click here and click the link that appears to learn how to make your very own pepperoni pizza.</p>
+<br>
+<h3>Hawaiian</h3>
+<p id="pizza1Text" onclick="displayLinks ('pizza2');">The next pizza on out list is the hawaiian. While this pizza is slightly controversial due to the pineapple theres no denying this pizza is
+still loved by many. Click here to reveal a link to show the recipe.</p>
+    <br>
+	
+	<h3>BBQ Chicken</h3>
+<p id="pizza1Text" onclick="displayLinks ('pizza3');">This pizza may not be as commonly eaten as the rest of our choices but we're sure you'll love this one too! click here to find out!.</p>
+    <br>
+
+<div style="width:800px; display:inline; float:left; margin:10px; background-color:#545E75; width:950px;">
+
+<br>
+    <img class="Pizza1" src="../images/Pizza1.png" width="300px" height="300px">
+    <img class="Pizza2" src="../images/pizza2.png" width="300px" height="300px">
+    <img class="Pizza3" src="../images/pizza3.png" width="300px" height="300px">
+    <img class="Pizza4" src="../images/pizza4.png" width="300px" height="300px"> 
+</div>
+
+<div style="float:left;width:150">
+    <section id="pizza1"style="display: none">
+        <img class="pizzaImages" src="../images/Pepperoni.png" >
+		<a href="Pepperoni.html">Click this to learn how to make it</a>
+    </section>
+
+    <section id="pizza2" style="display:none">
+        <img class="pizzaImages" src="../images/HAW.png">
+        <a href="Hawaiian.html">Click this to learn how to make it</a></p>
+    </section>
+
+    <section id="pizza3"style="display: none">
+        <img class="pizzaImages" src="../images/BBQ.png">
+       <a href= "BBQ.html">Click this to learn how to make it</a>
+    </section>
+
+
+    
+</div>
+
+</main>
+
+<!-- Page Footer -->
+<footer>
+<a href="https://veenas.com/">Veenas</a>
+<a href="https://www.souschef.co.uk/">Sous chef</a>
+</footer>
+
+</body>
+</html>
+
+

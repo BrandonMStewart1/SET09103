@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Student Cook Hub</title>
+<link rel="stylesheet" type="text/css" href="../CSS/cookingStyles.css">
+</head>
+
+<body width= "1500px">
+<script>
+var sitesArray = ["B&C.html", "Breakfast.html", "Pepperoni.html","BBQ.html", "Hawaiian.html", "Korma.html", "Vindaloo.html", "Tikka.html", "Carbonara.html", "Lasagna.html", "Bolognese.html", ];
+var randomised = sitesArray[Math.floor(Math.random() * sitesArray.length)];
+function linkRandom(){
+window.location.replace(randomised);
+}
+</script>
+<!-- header -->
+<header>
+<h1>Student Cook Hub</h1>
+</header>
+
+<!-- Nav -->
+<nav>
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="Pizzas.html">Pizzas</a></li>
+<li><a href="Pastas.html">Pastas</a></li>
+<li><a href="Burritos.html">Burritos</a></li>
+<li><a href="Curries.html">Curries</a></li>
+<button type="button" onclick="linkRandom(this)" style= "width:200px; height:45px; background-color:#A7CCED">Click Me!</button> 
+</ul>
+</nav>
+
+<!--main-->
+<main>
+<h1>Korma</h1><br>
+<img class="pepImage" src="../images/Korma2.png" width = "200px" height="200px">
+<h2>Ingredients</h2>
+<ul class = "intro">
+<li class = "intro"><p>1 onion, chopped</p></li>
+<li class = "intro"><p>2 garlic cloves, roughly chopped</p></li>
+<li class = "intro"><p>thumb-sized piece ginger, roughly chopped</p></li>
+<li class = "intro"><p>4 tbsp korma paste</p></li>
+<li class = "intro"><p>4 skinless, boneless chicken breasts, cut into bite-sized pieces</p></li>
+<li class = "intro"><p>50g ground almonds, plus extra to serve (optional)</p></li>
+<li class = "intro"><p>4 tbsp sultanas</p></li>
+<li class = "intro">400ml chicken stock<p></p></li>
+<li class = "intro"><p>¼ tsp golden caster sugar</p></li>
+<li class = "intro"><p>150g pot 0% fat Greek yogurt</p></li>
+<li class = "intro"><p>small bunch coriander, chopped</p></li>
+<li class = "intro"><p></p></li>
+<li class = "intro"><p></p></li>
+</ul>
+<img class="pepImage" src="../images/Korma3.png" width = "200px" height="200px">
+<h2>How to make</h2>
+<p>    STEP 1
+
+    Put 1 chopped onion, 2 roughly chopped garlic cloves and a roughly chopped thumb-sized piece of ginger in a food processor and whizz to a paste.
+    STEP 2
+
+    Tip the paste into a large high-sided frying pan with 3 tbsp water and cook for 5 mins. Add 4 tbsp korma paste and cook for a further 2 mins until aromatic.
+    STEP 3
+
+    Stir 4 skinless, boneless chicken breasts, cut into bite-sized pieces, into the sauce. Add 50g ground almonds, 4 tbsp sultanas, 400ml chicken stock and ¼ tsp golden caster sugar.
+    STEP 4
+
+    Give everything a good mix, then cover and simmer for 10 mins or until the chicken is cooked through.
+    STEP 5
+
+    Remove the pan from the heat, stir in a 150g pot Greek yogurt and some seasoning, then scatter over a small bunch of chopped coriander and more ground almonds, if using. Serve with brown or white basmati rice.
+</p>
+ 
+<div class = "homeForm">
+<form action="">
+  <p>Please rate this recipe</p>
+ <select name ="recipe">
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ </select><br><br> 
+  <input type="submit" value="Submit">
+</form> 
+<div>
+</main>
+
+<!-- Footer -->
+<footer>
+<p>These are links to places you can buy some fresh ingredients:</p>
+<a href="https://veenas.com/">Veenas</a>
+<a href="https://www.souschef.co.uk/">Sous chef</a>
+</footer>
+
+</body>
+</html>
+
+

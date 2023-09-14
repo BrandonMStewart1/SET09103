@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Student Cook Hub</title>
+<link rel="stylesheet" type="text/css" href="../CSS/cookingStyles.css">
+</head>
+
+<body width= "1500px">
+<script>
+var sitesArray = ["B&C.html", "Breakfast.html", "Pepperoni.html","BBQ.html", "Hawaiian.html", "Korma.html", "Vindaloo.html", "Tikka.html", "Carbonara.html", "Lasagna.html", "Bolognese.html", ];
+var randomised = sitesArray[Math.floor(Math.random() * sitesArray.length)];
+function linkRandom(){
+window.location.replace(randomised);
+}
+</script>
+<!-- header -->
+<header>
+<h1>Student Cook Hub</h1>
+</header>
+
+<!-- Nav -->
+<nav>
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="Pizzas.html">Pizzas</a></li>
+<li><a href="Pastas.html">Pastas</a></li>
+<li><a href="Burritos.html">Burritos</a></li>
+<li><a href="Curries.html">Curries</a></li>
+<button type="button" onclick="linkRandom(this)" style= "width:200px; height:45px; background-color:#A7CCED">Click Me!</button> 
+</ul>
+</nav>
+
+<!--main-->
+<main>
+<h1>hawaiian pizza</h1><br>
+<img class="pepImage" src="../images/HAW2.png" width = "200px" height="200px">
+<h2>Ingredients</h2>
+<ul class = "intro">
+<li class = "intro"><p>1/2 recipe homemade pizza dough (or 1 lb. store-bought pizza dough)</p></li>
+<li class = "intro"><p>1 Tablespoon (15ml) olive oil, divided</p></li>
+<li class = "intro"><p>1 Tablespoon (8g) cornmeal</p></li>
+<li class = "intro"><p></p>1/2 cup (127g) pizza sauce (homemade or store-bought)</li>
+<li class = "intro"><p>1 and 1/2 cups (6oz or 168g) shredded mozzarella cheese</p></li>
+<li class = "intro"><p>1/2 cup (75g) cooked ham or Canadian bacon, sliced or chopped</p></li>
+<li class = "intro"><p></p></li>
+<li class = "intro"><p>1/2 cup (82g) pineapple chunks (canned or fresh)</p></li>
+<li class = "intro"><p>3 slices bacon, cooked and crumbled</p></li>
+</ul>
+<img class="pepImage" src="../images/HAW.png" width = "200px" height="200px">
+<p>Dough: Prepare pizza dough through step 3. If using store-bought frozen pizza dough, make sure it’s thawed.
+Preheat oven to 475°F (246°C). Allow it to heat for at least 15–20 minutes as you shape the pizza in the next step. If using a pizza stone, place it in the oven to preheat as well. Lightly grease a large baking sheet or pizza pan with 1/2 Tablespoon of olive oil. Sprinkle lightly with cornmeal, which gives the crust extra crunch and flavor.
+Shape the dough: When the homemade dough is ready, punch it down to release any air bubbles. Divide the dough in half and freeze half the dough for another time—see freezing instructions in the pizza dough recipe. On a lightly floured work surface using lightly floured hands or rolling pin, gently flatten the dough into a disc. Place on prepared pan and, using lightly floured hands, stretch and flatten the disc into a 12-inch circle, about 1/2-inch thick. If the dough keeps shrinking back as you try to stretch it, stop what you’re doing, cover it lightly and let it rest for 5–10 minutes, then try again. Once shaped into a 12-inch circle, lift the edge of the dough up to create a lip around the edges. I simply pinch the edges up to create the rim. If using a pizza stone, place the dough directly on a baker’s peel dusted with cornmeal. Cover dough lightly with plastic wrap or a clean kitchen towel and allow to rest for a few minutes as you gather the pizza toppings.
+Top & bake the pizza: Using your fingers, push dents into the surface of the dough to prevent bubbling. Brush remaining olive oil all over the dough. Top the dough evenly with pizza sauce, then add the cheese, ham, pineapple, and bacon.
+Bake for 14–15 minutes or until the crust is golden brown. Remove from the oven.
+Slice hot pizza and serve immediately. Cover leftover pizza tightly and store in the refrigerator for up to 1 week.
+</p>
+ 
+<div class = "homeForm">
+<form action="">
+  <p>Please rate this recipe</p>
+ <select name ="recipe">
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ </select><br><br> 
+  <input type="submit" value="Submit">
+</form> 
+<div>
+</main>
+
+<!-- Footer -->
+<footer>
+<p>These are links to places you can buy some fresh ingredients:</p>
+<a href="https://veenas.com/">Veenas</a>
+<a href="https://www.souschef.co.uk/">Sous chef</a>
+</footer>
+
+</body>
+</html>
+
+

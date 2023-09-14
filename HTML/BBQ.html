@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Student Cook Hub</title>
+<link rel="stylesheet" type="text/css" href="../CSS/cookingStyles.css">
+</head>
+
+<body width= "1500px">
+<script>
+var sitesArray = ["B&C.html", "Breakfast.html", "Pepperoni.html","BBQ.html", "Hawaiian.html", "Korma.html", "Vindaloo.html", "Tikka.html", "Carbonara.html", "Lasagna.html", "Bolognese.html", ];
+var randomised = sitesArray[Math.floor(Math.random() * sitesArray.length)];
+function linkRandom(){
+window.location.replace(randomised);
+}
+</script>
+<!-- header -->
+<header>
+<h1>Student Cook Hub</h1>
+</header>
+
+<!-- Nav -->
+<nav>
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="Pizzas.html">Pizzas</a></li>
+<li><a href="Pastas.html">Pastas</a></li>
+<li><a href="Burritos.html">Burritos</a></li>
+<li><a href="Curries.html">Curries</a></li>
+<button type="button" onclick="linkRandom(this)" style= "width:200px; height:45px; background-color:#A7CCED">Click Me!</button> 
+</ul>
+</nav>
+
+<!--main-->
+<main>
+<h1>BBQ pizza</h1><br>
+<img class="pepImage" src="../images/BBQ.png" width = "200px" height="200px">
+<h2>Ingredients</h2>
+<ul class = "intro">
+<h2>For the base</h2>
+<li class = "intro"><p>250g wholemeal flour, plus a little for kneading if necessary</p></li>
+<li class = "intro"><p>1 tsp instant yeast</p></li>
+<li class = "intro"><p>¼ tsp salt</p></li>
+<li class = "intro"><p>1 tbsp rapeseed oil, plus extra for greasing</p></li>
+<h2>For the toppings</h2>
+<li class = "intro">pack of 3 peppers<p></p></li>
+<li class = "intro"><p>1 large onion</p></li>
+<li class = "intro"><p>1 tbsp rapeseed oil</p></li>
+<li class = "intro"><p>1 tsp fennel seeds</p></li>
+<li class = "intro"><p>2 tbsp barbecue sauce</p></li>
+<li class = "intro"><p>2 tbsp tomato purée</p></li>
+<li class = "intro"><p>1 large skinless chicken breast fillet (about 225g), diced</p></li>
+<li class = "intro"><p>175g baby plum tomatoes, quartered</p></li>
+<li class = "intro"><p>50g Applewood smoked cheese, grated</p></li>
+<li class = "intro"><p></p></li>
+</ul>
+<img class="pepImage" src="../images/BBQ2.png" width = "200px" height="200px">
+<h2>How to create</h2>
+<p>
+Heat oven to 220C/200C fan/gas 7. Tip the flour into a mixer with a dough hook, or a bowl. Add the yeast, salt, oil and 200ml warm water then mix well to a very soft dough. Knead in the food mixer for about 5 mins, but if making this by hand, tip onto a work surface and knead for about 10 mins. The dough is sticky, but try not to add too much extra flour. Leave in the bowl and cover with a tea towel while you halve and slice the peppers and onions. There is no need to prove the dough for a specific time, just let it sit while you make the topping.
+STEP 2
+
+For the topping: toss the peppers and onions with the oil and fennel seeds then roast for 15 mins. Meanwhile mix the barbecue sauce and tomato purée with 5 tbsp water.
+STEP 3
+
+Take the dough from the bowl and press into the base and up the sides of an oiled 25x35cm Swiss roll tin. Don’t knead the dough first otherwise it will be too elastic and will keep shrinking back. Spread with two thirds of the barbecue sauce mix then add the remainder to the chicken and toss well to coat it.
+STEP 4
+
+Take the roasted pepper mixture from the oven and spread on top of the pizza. Scatter over the tomatoes then evenly spoon on the barbecue chicken. Scatter with the cheese and bake for 15 mins. Serve with a salad or healthy coleslaw.</p>
+ 
+<div class = "homeForm">
+<form action="">
+  <p>Please rate this recipe</p>
+ <select name ="recipe">
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ </select><br><br> 
+  <input type="submit" value="Submit">
+</form> 
+<div>
+</main>
+
+<!-- Footer -->
+<footer>
+<p>These are links to places you can buy some fresh ingredients:</p>
+<a href="https://veenas.com/">Veenas</a>
+<a href="https://www.souschef.co.uk/">Sous chef</a>
+</footer>
+
+</body>
+</html>
+
+
