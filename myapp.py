@@ -12,7 +12,7 @@ def root():
 @app.route('/add_to_basket/<item>', methods=['POST'])
 def add_to_basket(item):
     basket.append((item, 2.0))
-    return render_template('Home.html', basket=basket)
+    return render_template('shop.html', basket=basket)
 
 @app.route('/remove_from_basket/<item>', methods=['POST'], endpoint='remove_from_basket')
 def remove_from_basket(item):
@@ -20,7 +20,7 @@ def remove_from_basket(item):
         if basket_item == item:
             del basket[i]
             break
-        return render_template('Home.html', basket=basket or [])
+    return render_template('shop.html', basket=basket or [])
 
 @app.route('/caves', endpoint='caves')
 def caves():

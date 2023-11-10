@@ -6,5 +6,39 @@
 
 <body>
 	<a href="/">Go to Home Page</a>
+
+	<form method="POST" action="/add_to_basket/item1">
+		<button type="submit">Add Rope</button>
+	</form>
+
+	<form method="POST" action="/add_to_basket/item2">
+		<button type="submit">Add Harness</button>
+	</form>
+
+	<form method="POST" action="/remove_from_basket/item1">
+		<button type="submit">Remove Rope</button>
+	</form>
+
+
+
+
+	<form method="POST" action="/remove_from_basket/item2">
+		<button type="submit">Remove Harness</button>
+	</form>
+
+	<h2>Basket:</h2>
+	<ul>
+		{% for item, price in basket %}
+			<li>{{ item }} - ${{ price }}</li>
+		{% endfor %}
+	</ul>
+
+
+
+
+
+
+
+
 </body>
 </html>
