@@ -17,10 +17,40 @@ ul {
 
 
 body {
-	background-color: #476A6F;
+	background-color: #2E5266;
+
+}
+
+nav ul {
+list-style-type:none; margin:0;  padding:0;  overflow:hidden; display:flex;
+margin:0;
+padding:0;
+}
+
+nav li {
+float:left;
+border-right:1px solid black;
+}
 
 
+nav li a {
+display:block;
+text-align:center;
+text-decoration:none;
+padding: 14px 59px;
+}
 
+nav li a:hover {
+background-color: salmon;
+}
+
+nav {
+background-color: #9FB1BC;
+}
+
+.intro {
+color: #D3D0CB;
+}
 
 
 
