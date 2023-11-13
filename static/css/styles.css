@@ -50,9 +50,46 @@ background-color: #9FB1BC;
 
 .intro {
 color: #D3D0CB;
+background-color:#6E8898;
+width:800px;
+text-align:center;
+margin-left: auto;
+margin-right: auto;
+width: 75%;
 }
 
+.bannerImg {
+width: 400px;
+height:400px;
 
+
+}
+
+.basket {
+width: 60%;
+margin: 15px auto;
+background-color:#D3D0CB;
+padding:20px;
+border-radius:5px;
+display: flex;
+justify-content: center;
+
+}
+
+.basket2  {
+background-color:#D3D0CB;
+width: 25%;
+padding:20px;
+margin:15px auto;
+
+
+}
+button {
+display: inline-block;
+padding-left:10px;
+padding-right:10px;
+margin: 10px 10px;
+}
 
 
 

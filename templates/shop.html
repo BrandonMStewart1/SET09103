@@ -2,37 +2,55 @@
 <html>
 <head>
 	<title>Scottish Spelunker Shop</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 
 <body>
-	<a href="/">Go to Home Page</a>
 
-	<form method="POST" action="/add_to_basket/item1">
+	<h1>Scottish Spelunkers</h1>
+	<nav>
+		<ul>
+
+			<li>	<a href="/caves">Caves</a></li>
+		</li>
+		<li>
+			<a href="/shop">Shop</a>
+		</li>
+
+		<li>
+			<a href="/">Home</a>
+		</li>
+
+
+		</ul>
+	</nav>
+
+	<div class = "basket">
+	<form method="POST" action="/add_to_basket/Rope">
 		<button type="submit">Add Rope</button>
 	</form>
 
-	<form method="POST" action="/add_to_basket/item2">
+	<form method="POST" action="/add_to_basket/Harness">
 		<button type="submit">Add Harness</button>
 	</form>
 
-	<form method="POST" action="/remove_from_basket/item1">
+	<form method="POST" action="/remove_from_basket/Rope">
 		<button type="submit">Remove Rope</button>
 	</form>
 
-
-
-
-	<form method="POST" action="/remove_from_basket/item2">
+	<form method="POST" action="/remove_from_basket/Harness">
 		<button type="submit">Remove Harness</button>
 	</form>
+	</div>
 
+	<div class = "basket2">
 	<h2>Basket:</h2>
 	<ul>
 		{% for item, price in basket %}
 			<li>{{ item }} - ${{ price }}</li>
 		{% endfor %}
 	</ul>
-
+	</div>
 
 
 

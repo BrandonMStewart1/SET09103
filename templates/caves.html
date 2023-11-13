@@ -1,14 +1,50 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Good page</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	</head>
+	<body>
+		<h1>Scottish Spelunkers</h1>
+<nav>
+	<ul>
+		<li>
+			<a href="/">Home</a></li>
 
-<head>
-<title>Scottish Spelunking</title>
-</head>
-<body>
-	<h1>Gaming</h1>
+		<li>
+			        <a href="/caves">Caves</a>
+		</li>
+		<li>
+			        <a href="/shop">Shop</a>
+		</li>
+	</ul>
+	</nav>
+	<p class = "intro">
+Exploring the Depths: A Journey into Caves and Cave Diving
+
+Welcome to the mesmerizing world of caves and the encealed beneath the Earth's surface, are captivating natural formations sculpted over thousands of years. These subterranean wonders are often characterized by intricate stalactites and stalagmites, mysterious chambers, and hidden passages.
+
+Cave diving, a specialized form of scuba diving, takes the exploration to another level, allowing enthusiasts to navigate the submerged realms of these underground wonders. It's a unique and challenging experience that requires specialized training and equipment.
+
+As you venture into the depths of a cave, you'll encounter an otherworldly environment, where the play of light and shadow creates an almost surreal atmosphere. Crystal-clear waters reveal a hidden world of geological formations, marine life, and the echoes of the cave's geological history.
+
+Safety and preparation are paramount in cave diving. The subterranean environment poses unique challenges, and divers must be well-versed in navigation, buoyancy control, and emergency procedures.
+
+Whether you're an avid ad or simply curious about the mysteries beneath our feet, cave diving opens a door to a realm where Earth's secrets are written in the rock and water that surround you. Join us on this journey into the heart of the Earth, where every dive is a step into the unknown, and every cavern holds the promise of discovery
 
 
 
-</body>
+
+
+	</p>
+			<img class="bannerImg" src="{{ url_for('static', filename='img/caves.jpg') }}" alt="Your Image">
+			<img class="bannerImg" src="{{ url_for('static', filename='img/cave1.jpg') }}" alt="Your Image">
+
+
+
+
+	</body>
 </html>
 
