@@ -1,8 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
-
-basket = []
+basket = {}
 
 @app.route('/')
 def root():
@@ -11,16 +10,19 @@ def root():
 
 @app.route('/add_to_basket/<item>', methods=['POST'])
 def add_to_basket(item):
-    basket.append((item, 2.0))
-    return render_template('shop.html', basket=basket)
+    if item in basket:
+        basket[item] += 1
+    else:
+        basket[item] = 1
+    return redirect('/shop')
 
 @app.route('/remove_from_basket/<item>', methods=['POST'], endpoint='remove_from_basket')
 def remove_from_basket(item):
-    for i, (basket_item, _) in enumerate(basket):
-        if basket_item == item:
-            del basket[i]
-            break
-    return render_template('shop.html', basket=basket or [])
+            if item in basket:
+                basket[item] -= 1
+                if basket[item] == 0:
+                    del basket[item]
+                return redirect('/shop')
 
 @app.route('/caves', endpoint='caves')
 def caves():
