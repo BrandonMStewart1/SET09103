@@ -1,27 +1,41 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for, redirect, session
 
 app = Flask(__name__)
-basket = []
 
+global total_price
+basket = []
+total_price = 0
 @app.route('/')
 def root():
-    total_price = sum([2.0 for _ in basket])
-    return render_template('Home.html', basket=basket,)
+    total_price = sum(item[1] for item in basket)
+    return render_template('Home.html', basket=basket, total_price=total_price)
 
 @app.route('/add_to_basket/<item>/<float:price>', methods=['POST'])
 def add_to_basket(item,price):
-        basket.append((item,2.0))
-        return render_template('shop.html', basket=basket)
+    global total_price
+    price = float(price)
+    basket.append((item, price))
+    total_price = sum(item[1] for item in basket)
+   
+   
+
+
+    return render_template('shop.html', basket=basket, total_price=total_price)
 
 
 
 @app.route('/remove_from_basket/<item>', methods=['POST'], endpoint='remove_from_basket')
 def remove_from_basket(item):
+    global basket
     for i, (basket_item,_) in enumerate(basket):
         if basket_item == item:
             del basket[i]
             break
-    return render_template('shop.html', basket=basket or [])
+
+    total_price = 0 if not basket else sum(item[1] for item in basket)
+            
+       
+    return render_template('shop.html',total_price=total_price, basket=basket or [])
 
 @app.route('/caves', endpoint='caves')
 def caves():
@@ -30,8 +44,13 @@ def caves():
 
 @app.route('/shop', endpoint='shop')
 def shop():
-        return render_template('shop.html')
+   
 
+    return render_template('shop.html')
+@app.route('/remove', methods=['POST'])
+def remove_basket():
+    basket.clear()
+    return render_template('shop.html', basket=basket, total_price=0)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
