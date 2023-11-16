@@ -25,8 +25,11 @@
 		</ul>
 	</nav>
 
-	<div class = "basket">
-	<form method="POST" action="/add_to_basket/Rope">
+	<div class ="productDiv">
+
+
+
+		<form action="{{ url_for('add_to_basket', item='Rope', price=1.0) }}" method="POST">
 		<button type="submit">Add Rope</button>
 	</form>
 
@@ -46,9 +49,14 @@
 	<div class = "basket2">
 	<h2>Basket:</h2>
 	<ul>
-		{% for item, price in basket %}
-		<li>{{ item }} - Price: {{ price }}</li>
+		{% for item_dict in basket %}
+		<li>{{ item_dict['item'] }} - Quantity: {{ item_dict['quantity'] }} - Price: {{ item_dict['price'] }} - Total Price: {{ item_dict['total_price'] }}</li>
+		<form method="post" action="{{ url_for('remove_from_basket', item=item_dict['item']) }}">
+			<button type="submit">Remove one</button>
+		</form>
+		</li>
 		{% endfor %}
+	<p>Total Price: {{ total_price }}</p>
 	</ul>
 	</div>
 
