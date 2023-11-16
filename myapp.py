@@ -1,7 +1,7 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template
 
 app = Flask(__name__)
-basket = {}
+basket = []
 
 @app.route('/')
 def root():
@@ -11,11 +11,9 @@ def root():
 @app.route('/add_to_basket/<item>/<float:price>', methods=['POST'])
 def add_to_basket(item,price):
         basket.append((item,2.0))
-        return render_template('shop.html' basket=basket)
-            
+        return render_template('shop.html', basket=basket)
 
-        total_price = sum([item_dict['price'] * item_dict['quantity'] for item_dict in basket])
-        return render_template('Home.html', basket=basket, total_price=total_price)
+
 
 @app.route('/remove_from_basket/<item>', methods=['POST'], endpoint='remove_from_basket')
 def remove_from_basket(item):

@@ -33,29 +33,27 @@
 		<button type="submit">Add Rope</button>
 	</form>
 
-	<form method="POST" action="/add_to_basket/Harness">
-		<button type="submit">Add Harness</button>
+	<form method="POST" action="{{ url_for('remove_from_basket', item='Rope') }}">
+	<button type="submit">Remove Rope</button>
+
 	</form>
 
-	<form method="POST" action="/remove_from_basket/Rope">
-		<button type="submit">Remove Rope</button>
-	</form>
 
-	<form method="POST" action="/remove_from_basket/Harness">
-		<button type="submit">Remove Harness</button>
+	 <form action="{{ url_for('add_to_basket', item='Harness', price=1.0) }}" method="POST">
+		 <button type="submit">Add Harness</button>
+	 </form>
+
+<form method="POST" action="{{ url_for('remove_from_basket', item='Harness') }}">
+	              <button type="submit">Remove Harness</button>
 	</form>
 	</div>
 
 	<div class = "basket2">
 	<h2>Basket:</h2>
 	<ul>
-		{% for item_dict in basket %}
-		<li>{{ item_dict['item'] }} - Quantity: {{ item_dict['quantity'] }} - Price: {{ item_dict['price'] }} - Total Price: {{ item_dict['total_price'] }}</li>
-		<form method="post" action="{{ url_for('remove_from_basket', item=item_dict['item']) }}">
-			<button type="submit">Remove one</button>
-		</form>
-		</li>
-		{% endfor %}
+		{% for item, price in basket %}
+		<li>{{ item }} - £{{ price }}</li>
+			{% endfor %}
 	<p>Total Price: {{ total_price }}</p>
 	</ul>
 	</div>
