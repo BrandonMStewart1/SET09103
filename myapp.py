@@ -41,6 +41,12 @@ def remove_from_basket(item):
 def caves():
         return render_template('caves.html')
 
+@app.route('/king', endpoint='king')
+def kings():
+    return render_template('kingCave.html')
+
+
+
 
 @app.route('/shop', endpoint='shop')
 def shop():
