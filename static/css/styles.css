@@ -18,7 +18,7 @@ ul {
 
 body {
 	background-color: #2E5266;
-	max-width:1500px;
+	max-width:1800px;
 margin: 0 auto;
 
 
@@ -27,19 +27,42 @@ margin: 0 auto;
 }
 
 .container{
-display: flex;
+color: #D3D0CB;
+background-color:#6E8898;
+width:1500px;
+text-align:center;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+display:flex;
 }
 .kingImage {
 max-width: 100%;
 width: 200px;
 height: 200px;
+margin-left: auto;
+
 }
+
+.footImg {
+width:100px;
+height:100px;
+}
+
+footer {
+background-color: #D3D0CB; 
+}
+
 
 .kingText {
 margin-left: 10px;
+color: #D3D0CB;
+max-width: 25%;
 }
 
-
+.footText {
+color: black;
+}
 
 nav ul {
 list-style-type:none; margin:0;  padding:0;  overflow:hidden; display:flex;
@@ -77,19 +100,30 @@ background-color: #D3D0CB;
 .intro {
 color: #D3D0CB;
 background-color:#6E8898;
-width:800px;
+width:1500px;
 text-align:center;
 margin-left: auto;
 margin-right: auto;
-width: 75%;
+width: 100%;
 }
 
-.bannerImg {
+.caveImg {
 width: 200px;
 height:200px;
-
+padding-left: 50px;
+padding-right:50px;
 
 }
+
+.imageDiv {
+background-color: #6E8898;
+width:100%;
+}
+
+
+
+
+
 
 .basket {
 width: 60%;
