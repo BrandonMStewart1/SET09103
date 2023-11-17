@@ -45,7 +45,9 @@ def caves():
 def kings():
     return render_template('kingCave.html')
 
-
+@app.route('/wem', endpoint='wem')
+def kings():
+        return render_template('wemCave.html')
 
 
 @app.route('/shop', endpoint='shop')

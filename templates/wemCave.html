@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" type="image/x-icon" sizes="32x32" href="static/favicon.ico">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Scottish Spelunkers</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	</head>
+	<body>
+		<h1>Scottish Spelunkers</h1>
+		<nav>
+		<ul>
+			<li>
+			<a href="/">Home</a></li>
+			<li>
+			<a href="/caves">Caves</a></li>
+			<li>
+			<a href="/shop">Shop</a>					</li>
+			</ul>
+		</nav>
+		<h2> Wemyss Caves</h2>
+		<div class="container">
+		<p class="intro">
+		Wemyss Caves are a collection of coastal caves located in the East Neuk of Fife, Scotland. These caves hold significant historical and archaeological importance, offering a window into the past thro
+		ugh their rich carvings and markings. Overview:
+		The Wemyss Caves he shoreline near the villages of East Wemyss and West Wemyss
+		. These caves are renowned for their Pictish and medieval carvings, providing insights into the lives of early inhabitants. Historical Significance:
+		The caves are believed to have been used for various purposes throustory, including as shelters, storage areas,
+		and potentially as places of ritual. The carvings depict scenes of daily life, mythical creatures, and symbolic motifs, offering a unique glimpse into the cultural and social practices of the Picts and later periods.
+
+
+
+
+
+
+		</p>
+
+
+		<img class="caveImg" src="{{ url_for('static', filename='img/wemCave.jpg') }}" alt="Your Image">
+		</div>
+	</body>
+</html>
