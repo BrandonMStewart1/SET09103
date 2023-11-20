@@ -40,7 +40,7 @@ max-width: 100%;
 height: auto;
 margin-right: 10px;
 margin-top: 10px;
-        margin-bottom: 10px;
+margin-bottom: 10px;
 }
 
 
@@ -81,13 +81,23 @@ background-color: #6E8898;
 }
 
 
+.productDiv {
+text-align: left;
+display: flex;
+justify-content: space-between;
+width: 100%;
+background-color: #9fb1bc;
+margin-top: 10px;
+} 
 
-
-
-
-
-
-
+.box {
+width:150px;
+height: 200px;
+margin:10px;
+border-style: solid;
+border-radius: 5px;
+background-color: #D3D0CB;
+}
 
 
 .kingImage {
@@ -164,7 +174,7 @@ width: 100%;
 }
 
 .caveImg {
-width: 200px;
+width: 180px;
 height:200px;
 padding-left: 50px;
 padding-right:50px;
@@ -176,10 +186,9 @@ background-color: #6E8898;
 width:100%;
 }
 
-.caveText {
-
+.WemImages {
+background-color: #9FB1BC;
 }
-
 
 
 
@@ -200,6 +209,7 @@ width: 25%;
 padding:20px;
 margin:15px auto;
 border-style: solid;
+display: block;
 
 }
 button {
@@ -209,7 +219,23 @@ padding-right:10px;
 margin: 10px 10px;
 }
 
-.removeButton {
+.deleteButton {
 text-align:center;
+}
+
+.removeButton {
+background-color: red;
+color: black;
+}
+
+
+.addButton {
+background-color: green;
+color; black;
+}
+
+.productImg {
+width: 100px;
+height: 100px;
 }
 
