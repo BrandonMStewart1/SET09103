@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"
+	<head>
+		<link rel="icon" type="image/x-icon" sizes="32x32" href="static/favicon.ico">
+		<meta charset="UTF-8">
+		<meta name="viewtial-scale=1.0">
+		<title>Scottish Spelunkers</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	</head>
+	<body id="formBody">
+		<h1>Scottish Spelunkers</h1>
+		
+
+	<nav>
+		<ul>
+			<li>
+			<a href="/">Home</a></li>
+
+			</li>
+			<li>
+				<a href="/caves">Caves</a>
+			</li>
+
+			<li>
+	                <a href="/shop">Shop</a>
+			</li>
+			<li>
+	                <a href="/form">Form</a>
+			</li>
+
+		</ul>
+	</nav>
+
+
+
+
+
+
+
+
+
+	<h1>Form</h1>
+	<form action="/submit" method="post" id="form">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" required>
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" rows="4" required></textarea>
+		
+
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender" required>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="female">Other</option>
+		</select>
+		<BR>	<BR>
+		<button type ="button" value="submit" onclick="openPopup()">Submit</button>
+	</form>
+
+
+
+	</body>
+</html>

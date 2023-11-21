@@ -1,4 +1,6 @@
-from flask import Flask, render_template, url_for, redirect, session
+from flask import Flask, render_template, url_for
+
+
 
 app = Flask(__name__)
 
@@ -41,12 +43,16 @@ def remove_from_basket(item):
 def caves():
         return render_template('caves.html')
 
+@app.route('/form', endpoint='forms')
+def forms():
+    return render_template('form.html')
+
 @app.route('/king', endpoint='king')
 def kings():
     return render_template('kingCave.html')
 
 @app.route('/wem', endpoint='wem')
-def kings():
+def wemCave():
         return render_template('wemCave.html')
 
 

@@ -11,9 +11,6 @@ color:#ECBEB4;
 
 	}
 
-ul {
-
-}
 
 
 body {
@@ -191,6 +188,31 @@ background-color: #9FB1BC;
 }
 
 
+#form {
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 400px;
+box-sizing: border-box;
+margin: auto;
+margin-top: 50px;
+}
+
+
+
+
+label {
+font-weight: bold;
+margin-bottom: 8px;
+display: block;
+}
+
+.funcImg {
+width:100px;
+height: 100px;
+}
 
 .basket {
 width: 60%;

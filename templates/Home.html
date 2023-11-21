@@ -8,19 +8,46 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+
+
+	<script>
+function enLarge(myimage)
+{myimage.style.width='400px';
+myimage.style.height='400px';}
+
+function getSmall(myimage)
+{myimage.style.width='180px';
+myimage.style.height='200px';
+}
+
+
+
+
+	        </script>
+
+
+
+
+
+
+
+
+
+
+
 <h1>Scottish Spelunkers</h1>
 <nav>
 <ul>
 <li>
-	<a href="/">Home</a></li>
+<a href="/">Home</a></li>
 <li>
-	<a href="/caves">Caves</a>	
-
-
+<a href="/caves">Caves</a>	
 </li>
-
 <li>
-	<a href="/shop">Shop</a>
+<a href="/shop">Shop</a>
+</li>
+<li>
+<a href="/form">Form</a>
 </li>
 
 
@@ -52,9 +79,9 @@ Delve into the science behind cave formations, learn about cave ecology, and und
 <br><br>
 Embark on a journey of discovery with Scottish Spelunkers, where the untamed beauty of Scotland's caves awaits. Join us in unraveling the mysteries of the underground world and embracing the spirit of adventure that defines spelunking in this enchanting land. Welcome to a world where every descent reveals a new chapter in the fascinating story of Scottish spelunking.</p>
 <div class="imageDiv">
-<img class="caveImg" src="{{ url_for('static', filename='img/caves.jpg') }}" alt="Your Image">
-<img class="caveImg" src="{{ url_for('static', filename='img/cave1.jpg') }}" alt="Your Image">
-<img class="caveImg" src="{{ url_for('static', filename='img/windCave.jpg') }}" alt="Your Image">
+<img class="caveImg" src="{{ url_for('static', filename='img/caves.jpg') }}" alt="Your Image" onmouseover="enLarge(this)" onmouseout="getSmall(this)">
+<img class="caveImg" src="{{ url_for('static', filename='img/cave1.jpg') }}" alt="Your Image" onmouseover="enLarge(this)" onmouseout="getSmall(this)">
+<img class="caveImg" src="{{ url_for('static', filename='img/windCave.jpg') }}" alt="Your Image" onmouseover="enLarge(this)" onmouseout="getSmall(this)">
 </div>
 <footer>
 	<p class="footText">
