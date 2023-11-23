@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, redirect
 
 
 
@@ -11,6 +11,16 @@ total_price = 0
 def root():
     total_price = sum(item[1] for item in basket)
     return render_template('Home.html', basket=basket, total_price=total_price)
+
+
+
+@app.route('/submitForm', methods=['POST'])
+def submitForm ():
+    return redirect(url_for('caves'))
+
+
+
+
 
 @app.route('/add_to_basket/<item>/<float:price>', methods=['POST'])
 def add_to_basket(item,price):

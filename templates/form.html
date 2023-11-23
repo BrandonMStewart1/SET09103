@@ -40,7 +40,7 @@
 
 
 	<h1>Form</h1>
-	<form action="/submit" method="post" id="form">
+	<form method="POST" action="{{ url_for('submitForm') }}" id="form">
 		<label for="name">Name:</label>
 		<input type="text" id="name" name="name" required>
 
@@ -61,7 +61,7 @@
 			<option value="female">Other</option>
 		</select>
 		<BR>	<BR>
-		<button type ="button" value="submit" onclick="openPopup()">Submit</button>
+		<input type="submit" value="Submit">
 	</form>
 
 
