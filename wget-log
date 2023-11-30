@@ -1,11 +1,0 @@
---2023-11-13 15:54:19--  https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d9/16/70/dsc-0293-largejpg.jpg?w=500
-Resolving dynamic-media-cdn.tripadvisor.com (dynamic-media-cdn.tripadvisor.com)... 95.101.244.144
-Connecting to dynamic-media-cdn.tripadvisor.com (dynamic-media-cdn.tripadvisor.com)|95.101.244.144|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 63781 (62K) [image/jpeg]
-Saving to: ‘dsc-0293-largejpg.jpg?w=500’
-
-dsc-0293-largejpg.jpg?w=500     0%[                                                  ]       0  --.-KB/s               dsc-0293-largejpg.jpg?w=500   100%[=================================================>]  62.29K  --.-KB/s    in 0.01s   
-
-2023-11-13 15:54:20 (4.41 MB/s) - ‘dsc-0293-largejpg.jpg?w=500’ saved [63781/63781]
-
